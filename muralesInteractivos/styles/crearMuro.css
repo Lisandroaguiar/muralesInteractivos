@@ -1,0 +1,178 @@
+.darumadrop-one-regular {
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    width: 100vw; /* Ancho completo de la ventana de visualización */
+    height: 100vh; /* Alto completo de la ventana de visualización */
+    background-size: cover; /* Ajusta la imagen al tamaño del body */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el padding predeterminado */
+}
+
+#contenedorTexto {
+    margin-top: -50vh;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+#contenedorTexto2 {
+    margin-top: -25vh;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+#contenedorTexto h1 {
+    font-family: "Darumadrop One", sans-serif;
+    margin-top: -45vh;
+    text-align: center;
+    margin-left: -2vw;
+}
+
+#contenedorTexto2 h4 {
+    font-family: "Darumadrop One", sans-serif;
+    margin-left: 0vw;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+#boton {
+    margin-top: -12vh;
+    margin-left: -10vw;
+}
+
+#boton img {
+    width: 120vw;
+    height: 115vh;
+}
+
+#botonGenerar {
+    margin-left: -10vw;
+    position: absolute;
+}
+
+#botonGenerar button {
+    background-color: #FF8181;
+    -webkit-text-fill-color: black;
+    margin-top: -70vh;
+    margin-left: 48vw;
+    margin-right: 55vw;
+    width: 20vw;
+}
+
+#boton2 {
+    margin-top: -45vh;
+    position: absolute;
+    margin-left: 38vw;
+    margin-right: 42vw;
+}
+
+#boton2 img {
+    width: 10vw;
+    height: 10vh;
+}
+
+#qrcode {
+    position: absolute;
+    margin-top: 32vh;
+    margin-left: 38vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .darumadrop-one-regular {
+        font-family: "Darumadrop One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    body {
+        width: 100vw; /* Ancho completo de la ventana de visualización */
+        height: 100vh; /* Alto completo de la ventana de visualización */
+        background-size: cover; /* Ajusta la imagen al tamaño del body */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-position: center; /* Centra la imagen */
+        margin: 0; /* Elimina los márgenes predeterminados */
+        padding: 0; /* Elimina el padding predeterminado */
+    }
+
+    #contenedorTexto {
+        margin-top: -50vh;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    }
+
+    #contenedorTexto2 {
+        margin-top: -25vh;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    }
+
+    #contenedorTexto h1 {
+        font-family: "Darumadrop One", sans-serif;
+        margin-top: -45vh;
+        text-align: center;
+        margin-left: 12vw;
+    }
+
+    #contenedorTexto2 h4 {
+        font-family: "Darumadrop One", sans-serif;
+        margin-left: 16vw;
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    #boton {
+        margin-top: -10vh;
+        margin-left: -6vw;
+    }
+
+    #boton img {
+        width: 107vw;
+        height: 104vh;
+    }
+
+    #botonGenerar button {
+        background-color: #FF8181;
+        -webkit-text-fill-color: black;
+        margin-top: -90vh;
+        margin-left: 35vw;
+        margin-right: 20vw;
+        width: 60vw;
+
+    }
+
+    #boton2 {
+        margin-top: -50vh;
+        position: absolute;
+        margin-left: 25vw;
+        margin-right: 20vw;
+    }
+
+    #boton2 img {
+        width: 50vw;
+        height: 7vh;
+    }
+
+    #qrcode {
+        position: absolute;
+        margin-top: 20vh;
+        margin-left: 21vw;
+    }
+
+    #botonGenerar {
+        margin-left: -10vw;
+        position: absolute;
+    }
+
+    #downloadBtn img {
+        height: 0vh;
+    }
+}

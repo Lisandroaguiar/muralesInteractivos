@@ -1,0 +1,108 @@
+.darumadrop-one-regular {
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+#imagenFondo img{
+
+    margin-left: -10vw;
+    margin-top: -20vh;
+     
+     }
+ #imagenFondo img{
+ 
+ width: 114vw;
+ height: 119.5vh;
+ 
+ 
+ }
+
+ #canvas{
+position: absolute;
+margin-top: -95vh;
+margin-left: 12vw;
+font-family: "Darumadrop One", sans-serif;
+height: 50vh;
+
+ }
+#canvas button{
+
+    font-family: "Darumadrop One", sans-serif;
+    margin-top: -10vh;
+
+}
+ #botonGenerarMuro{
+
+position: absolute;
+margin-top: -11vh;
+margin-left: 40vw;
+
+ }
+ #botonGenerarMuro img{
+
+width: 14vw;
+height: 7vh;
+
+ }
+#falseForm button{
+
+margin-top: -15vh;
+position: absolute;
+
+}
+
+
+ @media only screen and (max-width: 600px) {
+
+
+
+
+
+
+
+.darumadrop-one-regular {
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+#imagenFondo img{
+
+    margin-left: -10vw;
+    margin-top: -20vh;
+     
+     }
+ #imagenFondo img{
+ 
+ width: 114vw;
+ height: 116.5vh;
+ 
+ 
+ }
+
+ #canvas{
+position: absolute;
+margin-top: -90vh;
+margin-left: 7.5vw;
+font-family: "Darumadrop One", sans-serif;
+
+ }
+#canvas button{
+
+    font-family: "Darumadrop One", sans-serif;
+
+}
+ #botonGenerarMuro{
+
+position: absolute;
+margin-top: -11vh;
+margin-left: 25vw;
+
+ }
+ #botonGenerarMuro img{
+
+width: 50vw;
+height: 7vh;
+
+ }
+
+}
