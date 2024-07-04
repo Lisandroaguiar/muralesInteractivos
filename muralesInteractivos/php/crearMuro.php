@@ -71,7 +71,7 @@
               document.getElementById('botonGenerar').style.display = 'none';
               document.getElementById('boton2').innerHTML = `
                 <a id='dejarMensajeBtn' href='$nuevoMuro'>
-                  <img src='../assets/img/botonDejarMensaje.png' alt='Dejar Mensaje' style='width: 100%; height: auto;'>
+                  <img src='../assets/img/botonDejarMensaje.png' alt='Dejar Mensaje' style='width: 100%; height: auto; '>
                 </a>
                 <button id='downloadBtn' class='btn btn-success btn-lg' style='background: none; border: none; padding: 0; margin-top: 65px;'>
                   <img src='../assets/img/botonDescargar.png' alt='Descargar QR' style='width: 80%; height: auto;'>

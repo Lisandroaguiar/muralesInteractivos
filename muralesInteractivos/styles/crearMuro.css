@@ -36,7 +36,7 @@ body {
 
 #contenedorTexto h1 {
     font-family: "Darumadrop One", sans-serif;
-    margin-top: -53vh;
+    margin-top: -56vh;
     text-align: center;
     margin-left: 35vw;
 }
@@ -62,7 +62,7 @@ body {
 }
 
 #botonGenerar {
-    margin-left: -12vw;
+    margin-left: -12.5vw;
     display: flex;
 }
 
@@ -89,7 +89,7 @@ body {
 
 #qrcode {
     position: absolute;
-    margin-top:38vh;
+    margin-top:34vh;
     margin-left: 36vw;
 }
 #qrcode img{width: 20vw;
@@ -98,21 +98,25 @@ height: 20vw;}
 #imagenQr img{width: 25vw;
     position: absolute;
     height: 25vw;
-    margin-top:32vh;
-    margin-left: 34vw;
+    margin-top:28vh;
+    margin-left: 33vw;
 
 }
 
 #botonVolver img { 
     margin-bottom: 8vh;
-    margin-top: -36vh;
-    margin-left: 39.7vw;
+    margin-top: -24vh;
+    margin-left: 39.5vw;
     width: 12vw;
     height: 7.6vh;
-position: relative;}
+}
 
+#downloadBtn img{margin-top: -10vh;}
 
-
+#dejarMensajeBtn img{
+    margin-bottom: -12vh;
+    position: relative;
+    }
 @media (max-width: 380px) {
     .darumadrop-one-regular {
         font-family: "Darumadrop One", sans-serif;
