@@ -1,3 +1,4 @@
+
 html, body {
   overflow-x: hidden;
 }
@@ -33,7 +34,7 @@ position: absolute;
 }
 #imagenFondo img {
   margin-left: -10vw;
-  margin-top: -20vh;
+  margin-top: -12vh;
 }
 #imagenFondo img {
   width: 114vw;
@@ -168,13 +169,3 @@ margin-left: -14vw;
     margin-top: 10vh;
   }
 }
-
-
-
-
-
-
-
-
-
-
