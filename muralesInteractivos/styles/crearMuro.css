@@ -1,4 +1,5 @@
 
+
 body {
     overflow-x: hidden;
   }
@@ -36,9 +37,9 @@ body {
 
 #contenedorTexto h1 {
     font-family: "Darumadrop One", sans-serif;
-    margin-top: -56vh;
+    margin-top: -57vh;
     text-align: center;
-    margin-left: 35vw;
+    margin-left: 37vw;
 }
 
 #contenedorTexto2 h4 {
@@ -62,17 +63,17 @@ body {
 }
 
 #botonGenerar {
-    margin-left: -12.5vw;
+    margin-left: -12vw;
     display: flex;
 }
 
 #botonGenerar button {
     background-color: #FF8181;
     -webkit-text-fill-color: black;
-    margin-top: -90vh;
-    margin-left: 51vw;
+    margin-top: -85vh;
+    margin-left: 49vw;
     margin-right: 58vw;
-    width: 14vw;
+    width: 18vw;
 }
 
 #boton2 {
@@ -98,26 +99,30 @@ height: 20vw;}
 #imagenQr img{width: 25vw;
     position: absolute;
     height: 25vw;
-    margin-top:28vh;
-    margin-left: 33vw;
+    margin-top:30vh;
+    margin-left: 34vw;
 
 }
 
 #botonVolver img { 
     margin-bottom: 8vh;
-    margin-top: -24vh;
-    margin-left: 39.5vw;
+    margin-top: -26vh;
+    margin-left: 39.7vw;
     width: 12vw;
     height: 7.6vh;
-}
-
-#downloadBtn img{margin-top: -10vh;}
+position: relative;}
 
 #dejarMensajeBtn img{
-    margin-bottom: -12vh;
-    position: relative;
+    margin-top: -6vh;
+    margin-left: -0.5vw;
+    
     }
-@media (max-width: 380px) {
+    #downloadBtn img {
+        margin-top: 0vh;
+        margin-left: 1vw; 
+           }
+
+@media (max-width: 365px) {
     .darumadrop-one-regular {
         font-family: "Darumadrop One", sans-serif;
         font-weight: 400;
@@ -154,7 +159,7 @@ height: 20vw;}
         font-family: "Darumadrop One", sans-serif;
         margin-top: -53vh;
         text-align: center;
-        margin-left: 9vw;
+        margin-left: 5vw;
     }
 
     #contenedorTexto2 h4 {
@@ -176,16 +181,16 @@ height: 20vw;}
         height: 120vh;
     }
 
+
     #botonGenerar button {
         background-color: #FF8181;
         -webkit-text-fill-color: black;
-        margin-top: -50vh;
-        margin-left: 30vw;
+        margin-top: -40vh;
+        margin-left: 36vw;
         margin-right:20vw;
-        width: 60vw;
+        width: 50vw;
 
     }
-
     #boton2 {
         margin-top: 18vh;
         position: flex;
@@ -217,10 +222,11 @@ height: 20vw;}
 #botonGenerar img{
 margin-top: -30vh;
 
+
 }
     #downloadBtn img {
-margin-top: -27vh;
-margin-left: 0vw; 
+margin-top: -10vh;
+margin-left: 9vw; 
    }
 
 #imagenQr img{width: 80vw;
@@ -232,17 +238,20 @@ margin-left: 0vw;
 }
 #botonVolver img { 
     position: absolute;
-    margin-top: 20vh;
+    margin-top: 19vh;
     margin-left: 32vw;
-    width: 3.5cm;
-    height: 1.4cm;}
+width: 39%;  
+height: auto;  
+}
 
 
+
+
+#dejarMensajeBtn img{
+margin-top: -20vh;
+margin-left: 4vw;
 
 }
-#dejarMensajeBtn img{
-margin-top: -30vh;
-
 }
 @media (min-width:390px) and (max-width: 470px) {
     .darumadrop-one-regular {
@@ -297,7 +306,7 @@ margin-top: -30vh;
     }
 
     #boton {
-        margin-top: 10vh;
+        margin-top: 14vh;
         margin-left: -12vw;
     }
 
@@ -309,9 +318,9 @@ margin-top: -30vh;
     #botonGenerar button {
         background-color: #FF8181;
         -webkit-text-fill-color: black;
-        margin-top: -50vh;
-        margin-left: 30vw;
-        margin-right:20vw;
+        margin-top: -60vh;
+        margin-left: 32vw;
+        margin-right:18vw;
         width: 60vw;
 
     }
@@ -347,11 +356,13 @@ margin-top: -30vh;
     }
 #dejarMensajeBtn img{
 
-    margin-top: -28vw;
+    margin-top: -8vw;
     width: 10vw;
+
 }
     #downloadBtn img {
-margin-top: -6vh; 
+margin-top: 2vh; 
+margin-left: 5vw;
    }
 
 #imagenQr img{
@@ -364,10 +375,142 @@ margin-top: -6vh;
 }
 #botonVolver img { 
     position: absolute;
-    margin-top: 17vh;
+    margin-top: 19vh;
     margin-left: 31vw;
     width: 43vw;
     height: 7vh;}
 
 }
 
+@media (min-width:369px) and (max-width: 380px) {
+    .darumadrop-one-regular {
+        font-family: "Darumadrop One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    body {
+        width: 100vw; /* Ancho completo de la ventana de visualización */
+        height: 100vh; /* Alto completo de la ventana de visualización */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-position: center; /* Centra la imagen */
+        margin: 0; /* Elimina los márgenes predeterminados */
+        padding: 0; /* Elimina el padding predeterminado */
+        margin-top: -25vh;
+        overflow-x: hidden;
+
+    }
+
+    #contenedorTexto {
+        margin-top: -50vh;
+        position: flex;
+        width: 100%;
+        text-align: center;
+    }
+
+    #contenedorTexto2 {
+        margin-top: -25vh;
+        position: flex;
+        width: 100%;
+        text-align: center;
+    }
+
+    #contenedorTexto h1 {
+        font-family: "Darumadrop One", sans-serif;
+        margin-top: -53vh;
+        text-align: center;
+        margin-left: 7vw;
+    }
+
+    #contenedorTexto2 h4 {
+        font-family: "Darumadrop One", sans-serif;
+        margin-left: 20vw;
+        text-align: center;
+        font-size: 5vw;
+        max-width: 60vw;
+        margin-top: 18vh;
+    }
+
+    #boton {
+        margin-top: 10vh;
+        margin-left: -12vw;
+         }
+
+    #boton img {
+        width: 120vw;
+        height: 120vh;
+    }
+
+    #botonGenerar button {
+        background-color: #FF8181;
+        -webkit-text-fill-color: black;
+        margin-top: -50vh;
+        margin-left: 35vw;
+        margin-right:20vw;
+        width: 50vw;
+
+    }
+
+    #boton2 {
+        margin-top: 18vh;
+        position: flex;
+        margin-left: 21vw;
+        margin-right: 22vw;
+    }
+
+    #boton2 img {
+        width: 50vw;
+        height: 7vh;
+    }
+
+    #qrcode {
+        display: flex;
+        position: absolute;
+        margin-top: 28vh;
+        margin-left: 20vw;
+    }
+    #qrcode img{
+    width: 60vw;
+    height: 60vw;
+
+    }
+
+    #botonGenerar {
+        margin-left: -10vw;
+        position: flex;
+    }
+#botonGenerar img{
+margin-top: -20vh;
+width: auto;
+
+
+}
+    #downloadBtn img {
+margin-top: -10vh;
+margin-left: 11vw; 
+   }
+
+#imagenQr img{width: 80vw;
+    position: absolute;
+    height: 75vw;
+    margin-top:24vh;
+    margin-left: 10vw;
+
+}
+#botonVolver img { 
+    position: absolute;
+    margin-top: 19vh;
+    margin-left: 34vw;
+width: 35%;  
+height: auto;  
+}
+
+
+
+
+#dejarMensajeBtn img{
+margin-top: -20vh;
+margin-left: 7vw;
+
+}
+}
