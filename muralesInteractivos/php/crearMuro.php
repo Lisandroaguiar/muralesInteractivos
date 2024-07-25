@@ -19,6 +19,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
   <!-- estilo -->
+  <link rel="stylesheet" href="../styles/index.css" />
   <link rel="stylesheet" href="../styles/crearMuro.css" />
   <link rel="icon" href="../assets/img/icon.png" />
   <title>Crear Muro</title>
@@ -26,10 +27,21 @@
 
 <body>
   <div id="pagina">
-    <div id="imagenQr">
-      <img src="../assets/img/codigoQR.png" alt="">
+    <div id="mostrarQR" class="flex">
+      <h1>Generador de muros</h1>
+      <div class="imagenQr flex" id="qrFantasma">
+        <!-- <img src="../assets/img/codigoQR.png" alt=""> QR fantasma -->
+        <div id="botonGenerar" class="flex">
+          <form method="post" action="crearMuro.php" id="crearMuro" class="flex">
+            <button type="submit" class="customButton" id="botonGenerarMuro">
+              <h3>¡Generar muro!</h3>
+            </button>
+            <input type="hidden" name="crearMuroInput" id="crearMuroInput">
+          </form>
+        </div>
+      </div>
+      <div class="imagenQr flex hidden" id="qrcode"> <!-- QR GENERADO --> </div>
     </div>
-    <div id="qrcode"></div>
 
     <?php
     require '../conector.php';
@@ -37,46 +49,42 @@
     ?>
 
     <div id="generador">
-      <div id="boton">
-        <img src="../assets/img/fondoNota.png" alt="">
-      </div>
-      <div>
+      <!-- <div>
         <div id="botonGenerar">
-          <form method="post" action="crearMuro.php" id="crearMuro">
-            <button type="submit" class="btn btn-success btn-lg" style="background: none; border: none; padding: 0;">
-              <img src="../assets/img/botonGenerarMuro2.png" alt="Generar Muro" style="width: 100%; height: auto;">
+          <form method="post" action="crearMuro.php" id="crearMuro" class="flex">
+            <button type="submit" class="customButton" id="botonGenerarMuro">
+              <h3>¡Generar muro!</h3>
             </button>
             <input type="hidden" name="crearMuroInput" id="crearMuroInput">
           </form>
         </div>
-      </div>
-      <div id="contenedorTexto">
-        <h1>Generador de muros</h1>
-      </div>
-      <div id="boton2">
+      </div> -->
+
+      <div id="boton2" class="flex hidden">
         <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['crearMuroInput'])) {
           $UUID = uniqid("notitas");
-          $nuevoMuro = $dom . "/php/notas.php?muro=" . $UUID;           // ?????????????????????????????????????????????????????????????????????
-        
+          $nuevoLocal = "/php/notas.php?muro=" . $UUID;
+          $nuevoGlobal = $dom . $nuevoLocal;
+
           $sql = "INSERT INTO `muros`(`UUID`) VALUES ('$UUID')";
           $stmt = $conector->prepare($sql);
           $stmt->execute();
           echo ("
             <script>
-              let nuevoMuro = '$nuevoMuro';
+              let nuevoMuro = '$nuevoGlobal';
               console.log(nuevoMuro);
               new QRCode(document.getElementById('qrcode'), nuevoMuro);
+              document.getElementById('boton2').classList.remove('hidden');
+              document.getElementById('qrcode').classList.remove('hidden');
               document.getElementById('botonGenerar').style.display = 'none';
+              document.getElementById('qrFantasma').style.display = 'none';
               document.getElementById('boton2').innerHTML = `
-             <div id='dejarMsj'>
-
-                <a id='dejarMensajeBtn' href='$nuevoMuro'>
-                  <img src='../assets/img/botonDejarMensaje.png' alt='Dejar Mensaje' style='width:auto; '>
-                </a>
-                </div>
-                <button id='downloadBtn' class='btn btn-success btn-lg' style='background: none; border: none; padding: 0;'>
-                  <img src='../assets/img/botonDescargar.png' alt='Descargar QR' style='width:auto;'>
+                <button id='dejarMensajeBtn' class='customButton' onclick=location.assign('$nuevoLocal')>
+                  <h3>¡Dejá un mensaje!</h3>
+                </button>
+                <button id='downloadBtn' class='customButton'>
+                  <h3>Descargar muro</h3>
                 </button>
               `;
               document.getElementById('downloadBtn').addEventListener('click', function() {
@@ -99,15 +107,19 @@
         }
         ?>
       </div>
-      <div id="contenedorTexto2">
-        <h4>Recorda guardar el qr de tu muro y dejar tu primer mensaje
-</h4>
-      </div>
+
     </div>
+    <!-- <div class="contenedorTexto">
+      <h4>Recordá guardar el QR de tu muro y dejar tu primer mensaje.</h4>
+    </div> -->
+    <button type="button" class="customButton" id="botonVolver" onclick="location.assign('../index.php')">
+      <h4>Volver al escáner</h4>
+    </button>
+    <!-- <a href="../index.php">
+      <div id="botonVolver"><img src="../assets/img/botonVolver.png" alt=""></div>
+    </a> -->
   </div>
-  <a href="../index.php">
-  <div id="botonVolver"><img src="../assets/img/botonVolver.png" alt=""></div>
-  </a>
+
   <!-- Bootstrap -->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"
     integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"

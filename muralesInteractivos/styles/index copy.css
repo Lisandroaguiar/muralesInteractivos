@@ -1,0 +1,176 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+.darumadrop-one-regular {
+  font-family: "Darumadrop One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.col-sm-6 img {
+  width: 200px;
+  height: 55px;
+  margin-left: 45vw;
+  margin-top: 5vh;
+}
+
+#reader {
+  position: flex;
+  margin-top: -90vh;
+  max-width: 30vw;
+  margin-left: 37vw;
+  margin-right: -30vw;
+}
+.col-sm-6 h1 {
+  font-family: "Darumadrop One", sans-serif;
+  margin-right: -15vw;
+  margin-bottom: 2vh;
+  margin-left: 45vw;
+  margin-top: -100vh;
+  position: absolute;
+}
+#imagenFondo img {
+  margin-left: -10vw;
+  margin-top: -12vh;
+}
+#imagenFondo img {
+  width: 114vw;
+  height: 120vh;
+}
+#cuerpoPagina {
+  background-color: #f5e98b;
+}
+#contenedorTexto h3 {
+  font-family: "Darumadrop One", sans-serif;
+  margin-right: -15vw;
+  margin-bottom: 2vh;
+  margin-left: 40vw;
+  margin-top: 5vh;
+}
+#contenedorTexto h4 {
+  font-family: "Darumadrop One", sans-serif;
+  margin-left: 25vw;
+  margin-bottom: 2vh;
+  margin-right: -30vw;
+  text-align: center;
+}
+
+/* ------------------------------------------------------------------------MOBILE */
+@media (max-width: 380px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .darumadrop-one-regular {
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .col-sm-6 img {
+    width: 200px;
+    height: 55px;
+    margin-left: 25vw;
+    margin-top: 4vh;
+  }
+  .col-sm-6 h1 {
+    font-family: "Darumadrop One", sans-serif;
+    margin-right: -15vw;
+    margin-bottom: 2vh;
+    margin-left: 25vw;
+    margin-top: -10vh;
+    position: absolute;
+  }
+  #reader {
+    position: flex;
+    margin-top: -90vh;
+    max-width: 100vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  #imagenFondo img {
+    margin-left: -10vw;
+    margin-top: -12vh;
+  }
+  #imagenFondo img {
+    width: 114vw;
+    height: 116.5vh;
+  }
+  #contenedorTexto h3 {
+    font-family: "Darumadrop One", sans-serif;
+    margin-bottom: 2vh;
+    margin-left: -12vw;
+    text-align: center;
+  }
+  #contenedorTexto h4 {
+    font-family: "Darumadrop One", sans-serif;
+    margin-left: 10vw;
+    margin-bottom: 2vh;
+    max-width: 80vw;
+  }
+}
+
+/* ------------------------------------------------------------------------DESKTOP */
+@media (min-width: 380px) and (max-width: 470px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .darumadrop-one-regular {
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .col-sm-6 img {
+    width: 300px;
+    height: 82.5px;
+    margin-left: 7vw;
+    margin-top: 4vh;
+    max-width: 100vw;
+    align-items: center;
+  }
+  .col-sm-6 h1 {
+    font-family: "Darumadrop One", sans-serif;
+    margin-right: -15vw;
+    margin-left: 20vw;
+    margin-top: -10vh;
+    position: absolute;
+    text-align: center;
+    max-width: 100vw;
+  }
+  #reader {
+    margin-top: -110vh;
+    max-width: 120vw;
+    margin-left: 10vw;
+    margin-right: 13vw;
+  }
+
+  #imagenFondo img {
+    margin-left: -30vw;
+    margin-top: -25vh;
+  }
+  #imagenFondo img {
+    width: 140vw;
+    height: 140vh;
+  }
+  #contenedorTexto h3 {
+    font-family: "Darumadrop One", sans-serif;
+    margin-bottom: 2vh;
+    margin-left: -14vw;
+    text-align: center;
+  }
+  #contenedorTexto h4 {
+    font-family: "Darumadrop One", sans-serif;
+    margin-left: 6vw;
+    margin-bottom: 2vh;
+    max-width: 80vw;
+  }
+  #cuerpoPagina {
+    margin-left: 5vw;
+    margin-top: 10vh;
+  }
+}
