@@ -31,20 +31,22 @@
   margin-bottom: 0px; /* Ajusta este valor según sea necesario */
   width: 100%;
 }
-@media (max-width: 480px) {
+@media (min-width:380px)and (max-width: 480px) {
   #pagina h1{width: 100vw;
     text-align: center;
     margin-top: 0px;
     margin-bottom: 10px;}
 
-  .imagenQr {
-  width: 60vw;
-  height: 60vw;
-  border: 1px solid black;
-  background-color: hsl(53, 64%, 65%);
-  margin-bottom: 16px;
+    .imagenQr {
+      width: 70vw;
+      height: 70vw;
+      border: 1px solid black;
+      background-color: hsl(53, 64%, 65%);
+      margin-bottom: 16px;
+      padding-top: 14px;
+  }
 
-}
+
 
 .imagenQr img {
   width: 48vw;
@@ -53,7 +55,7 @@
 }
 
 #boton2 {
-  margin-bottom: 64px;
+  margin-bottom: 2vh;
 }
 
 #botonGenerarMuro button {
@@ -63,7 +65,7 @@
 }
 #boton2 button {
   width: 100%;
-  margin: 6vh 8vw;
+  margin: 2vh 8vw;
   padding: 0px 10% 16px;
 }
 #botonVolver {
@@ -75,7 +77,51 @@
   width: 100%;
 }
 }
-@media (max-width: 380px) {
+@media (max-width: 350px) {
+  #pagina h1{width: 100vw;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 10px;}
+    .imagenQr {
+    width: 80vw;
+    height: 82vw;
+    border: 1px solid black;
+    background-color: hsl(53, 64%, 65%);
+    margin-bottom: 16px;
+  
+  }
+  
+  .imagenQr img {
+    width: 48vw;
+    height: auto;
+    margin: 18px;
+  }
+  
+  #boton2 {
+    margin-bottom: 2vh;
+  }
+  
+  #botonGenerarMuro button {
+    width: 100%;
+    margin: 60vh 8vw;
+    padding: 0px 10% 16px;
+  }
+  #boton2 button {
+    width: 100%;
+    margin: 2vh 8vw 2vh;
+    padding: 0px 10% 16px;
+}
+  #botonVolver {
+    margin: 0px 8vw;
+  }
+  #boton2 #downloadBtn  {
+    margin-top: 0px; /* Ajusta este valor para mover el botón hacia arriba o hacia abajo */
+    margin-bottom: 0px; /* Ajusta este valor según sea necesario */
+    width: 100%;
+  }
+  }
+
+@media (min-width: 360px) and (max-width: 380px) {
 #pagina h1{width: 100vw;
 text-align: center;
 margin-top: 0px;
@@ -96,7 +142,7 @@ margin-bottom: 10px;}
 }
 
 #boton2 {
-  margin-bottom: 64px;
+  margin-bottom: 2vh;
 }
 
 #botonGenerarMuro button {
@@ -106,7 +152,7 @@ margin-bottom: 10px;}
 }
 #boton2 button {
   width: 100%;
-  margin: 6vh 8vw;
+  margin: 2vh 8vw;
   padding: 0px 10% 16px;
 }
 #botonVolver {
@@ -118,3 +164,98 @@ margin-bottom: 10px;}
   width: 100%;
 }
 }
+
+
+@media (min-width: 900px) {
+  #pagina h1{width: 100vw;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 10px;}
+    .imagenQr {
+    width: 25vw;
+    height: 25vw;
+    border: 1px solid black;
+    background-color: hsl(53, 64%, 65%);
+    margin-bottom: 16px;
+  
+  }
+  
+  .imagenQr img {
+    width: 20vw;
+    height: auto;
+    margin: 18px;
+  }
+  
+  #boton2 {
+    margin-bottom: 1vh;
+  }
+  
+  #botonGenerarMuro button {
+    width: 100%;
+    margin: 60vh 8vw;
+    padding: 0px 10% 16px;
+  }
+  #boton2 button {
+    width: 100%;
+    margin: 2vh 8vw 1vh 8vw;
+    padding: 0px 10% 16px;
+  }
+  #botonVolver {
+    margin: 0px 8vw;
+  }
+  #boton2 #downloadBtn  {
+    margin-top: 0px; /* Ajusta este valor para mover el botón hacia arriba o hacia abajo */
+    margin-bottom: 0px; /* Ajusta este valor según sea necesario */
+    width: 100%;
+  }
+  }
+
+
+  @media (min-width: 530px) and (max-width:600px){
+    #pagina h1{width: 100vw;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;}
+      .imagenQr {
+      width: 25vw;
+      height: 25vw;
+      border: 1px solid black;
+      background-color: hsl(53, 64%, 65%);
+      margin-bottom: 16px;
+    
+    }
+    
+    .imagenQr img {
+      width: 15vw;
+      height: auto;
+      margin: 18px;
+    }
+    
+    #boton2 {
+      margin-top: 20vw;
+      margin-bottom: 2vw;
+    }
+    
+    #botonGenerarMuro button {
+      width: 100%;
+      margin: 60vh 8vw;
+      padding: 0px 10% 16px;
+    }
+    #boton2 button {
+      width: 100%;
+      margin: 2vh 8vw;
+      padding: 0px 10% 16px;
+    }
+    #botonVolver {
+      margin: 0px 8vw;
+    }
+    #boton2 #downloadBtn  {
+      margin-top: 0px; /* Ajusta este valor para mover el botón hacia arriba o hacia abajo */
+      margin-bottom: 0px; /* Ajusta este valor según sea necesario */
+      width: 100%;
+    }
+    }
+
+
+
+

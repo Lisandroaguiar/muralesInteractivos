@@ -4,7 +4,6 @@ body {
 
   background-color: #f5e98b;
 }
-
 h1,
 h2,
 h3,
@@ -48,8 +47,8 @@ p {
 }
 
 .customButton {
-  margin: 16px 10vw;
-  padding: 4px 10%;
+  margin: 6px 10vw;
+  padding: 14px;
 
   background-color: #ff8181;
   border: 2px solid black;
@@ -65,7 +64,14 @@ p {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width:450px) {
+#buttonContainer {
+  display: flex;
+  flex-direction: column; /* Por defecto en columna */
+  justify-content: center;
+  align-items: center;
+  margin: 16px 0; /* Ajusta el margen según sea necesario */
+}
+@media (max-width:500px) {
   html,
 body {
   overflow-x: hidden;
@@ -73,5 +79,71 @@ body {
 
   background-color: #f5e98b;
 }
+
+.customButton {
+  margin: 5px 10vw;
+  padding: 0px 35px 8px 35px;
+  background-color: #ff8181;
+  border: 2px solid black;
+  border-radius: 24px;
+}
+.customButton:hover {
+  background-color: #ffb3b3;
+}
   
 }
+@media (min-width:500px)and (max-width: 560px) {
+  html,
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  background-color: #f5e98b;
+}
+h1,h2,h3,p{
+  margin: 0px;
+}
+h4{margin: 2px;}
+.customButton {
+  margin: 5px 10vw;
+  padding: 0px 35px 8px 35px;
+  background-color: #ff8181;
+  border: 2px solid black;
+  border-radius: 24px;
+}
+.customButton:hover {
+  background-color: #ffb3b3;
+}
+  
+}
+@media(min-width:1020px) {
+ html, body {
+    overflow-x: hidden;
+  
+    background-color: #f5e98b;
+  }
+  #buttonContainer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+
+  #botonDejarNota {
+    margin: 0px 50px;
+    padding: 4px 62px;
+}
+  #botonVolver {
+    margin: 0px 10px;
+    padding: 13px 44px;
+}
+
+}
+
+@media (max-width:380px) {
+
+h1,h2,h3,p{
+  margin: 0px;
+}
+h4{margin: 2px;}}
