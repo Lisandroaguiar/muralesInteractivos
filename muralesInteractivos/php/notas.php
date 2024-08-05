@@ -65,7 +65,9 @@ while ($row = $result->fetch_assoc()) {
 
             </a>
         </div> -->
-        <button type="button" class="customButton" id="botonCrearMuro" onclick="location.assign('./php/crearMuro.php')"
+    
+        <div class="contenedorBotones">
+        <button type="button" class="customButton" id="botonCrearMuro" onclick="location.assign('./crearMuro.php')"
             style="display: none;">
             <h4>¡Quiero crear mi muro!</h4>
         </button>
@@ -76,6 +78,7 @@ while ($row = $result->fetch_assoc()) {
         <button type="button" class="customButton" id="botonVolver" onclick="location.assign('../index.php')">
             <h4>Volver al escáner</h4>
         </button>
+        </div>
     </div>
 
     <script>

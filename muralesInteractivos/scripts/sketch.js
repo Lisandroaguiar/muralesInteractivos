@@ -236,13 +236,28 @@ function adjustInterfacePositions() {
   let newX = width / 2 - (colorButtons.length / 2) * 30;
   let newY = height * 0.75;
 
+
+
+
+
+  if (windowWidth > 850)
+    {  colorButtons.forEach((button, i) => {
+      button.position(newX+70 + i * 30, newY-90);
+    });
+      input.position(newX+75, newY -15);
+
+      button.position(input.x + input.width , input.y - 10);
+
+    }
+else{
+
   colorButtons.forEach((button, i) => {
     button.position(newX + i * 30, newY);
   });
+    input.position(newX, newY + 55);
 
-  input.position(newX, newY + 55);
-
-  button.position(input.x + input.width + 10, input.y - 10);
+    button.position(input.x + input.width + 10, input.y - 10);
+}
 }
 
 function toggleInterface(show) {
