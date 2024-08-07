@@ -101,7 +101,7 @@ error_reporting(E_ALL);
             console.log('link valido');
 
             sessionStorage.setItem('muro', muros[i].UUID); //guardar UUID del muro
-            location.assign(`./php/notas.php?muro=${muros[i].UUID}`);
+            location.assign(`php/notas.php?muro=${muros[i].UUID}`);
             break; // detener el bucle una vez que encontramos el UUID correcto        } else {
             console.log('link inválido');
           }
